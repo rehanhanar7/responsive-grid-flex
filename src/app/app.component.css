@@ -4,10 +4,9 @@ p {
 
 .simpleclass {
   padding: 1vw;
-  background-color: aquamarine;
+  /* background-color: aquamarine; */
 }
 
 .cardclass {
-  margin-bottom: 1vh;
-  border: 1px solid black;
+  padding: 1vw;
 }

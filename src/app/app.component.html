@@ -1,4 +1,11 @@
-<h1>Start editing to see some magic happen :)</h1>
+<h1>
+  Reference :
+  <a
+    href="https://indepth.dev/posts/1208/angular-flex-layout-flexbox-and-grid-layout-for-angular-component"
+    target="_blank"
+    >https://indepth.dev/posts/1208/angular-flex-layout-flexbox-and-grid-layout-for-angular-component</a
+  >
+</h1>
 <div
   fxLayout="row wrap"
   fxLayout.lt-sm="column"
@@ -12,24 +19,40 @@
     fxFlex.lt-md="0 1 calc(50% - 32px)"
     fxFlex.lt-sm="100%"
   >
-    <div
-      gdAreas="header header | side content | footer footer"
-      gdGap="16px"
-      gdRows="auto auto auto"
-      gdAreas.lt-md="header | side | content | footer"
-      gdRows.lt-md="auto auto auto auto"
-      class="cardclass"
-    >
-      <div class="simpleclass" gdArea="header">
-        <img
-          mat-card-image
-          src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/025.png"
-          style="max-width: 10vw; max-height: 10vh"
-        />
-      </div>
-      <div class="simpleclass" gdArea="side">Side</div>
-      <div class="simpleclass" gdArea="content">Content</div>
-      <div class="simpleclass" gdArea="footer">Footer</div>
+    <div class="cardclass">
+      <mat-card>
+        <mat-card-content
+          gdAreas="header header | side content | footer footer"
+          gdGap="16px"
+          gdRows="auto auto auto"
+          gdAreas.lt-md="header | side | content | footer"
+          gdRows.lt-md="auto auto auto auto"
+        >
+          <div class="simpleclass" gdArea="header">Pikachu</div>
+          <div class="simpleclass" gdArea="side">
+            <img
+              mat-card-image
+              src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/025.png"
+              style="max-width: 10vw; max-height: 10vh"
+            />
+          </div>
+          <div class="simpleclass" gdArea="content">
+            Height : 6 feet <br />
+            <br />Weight : 80 kg
+          </div>
+          <div class="simpleclass" gdArea="footer">
+            <mat-expansion-panel>
+              <mat-expansion-panel-header>
+                <mat-panel-title> Abilities </mat-panel-title>
+              </mat-expansion-panel-header>
+              <mat-list>
+                <mat-list-item> Thunderbolt </mat-list-item>
+                <mat-list-item> Kick </mat-list-item>
+              </mat-list>
+            </mat-expansion-panel>
+          </div>
+        </mat-card-content>
+      </mat-card>
     </div>
   </div>
 </div>
