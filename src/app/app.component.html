@@ -9,14 +9,16 @@
 <div
   fxLayout="row wrap"
   fxLayout.lt-sm="column"
-  fxLayoutGap="32px"
+  fxLayoutGap="1vw"
   fxLayoutAlign="flex-start"
 >
   <div
     style="width:50vwl"
     *ngFor="let _ of [1, 2, 3, 4, 5, 6]"
-    fxFlex="0 1 calc(33.3% - 32px)"
-    fxFlex.lt-md="0 1 calc(50% - 32px)"
+    fxFlex="0 1 calc(25% - 1vw)"
+    fxFlex.lt-xl="0 1 calc(30% - 1vw)"
+    fxFlex.lt-lg="0 1 calc(40% - 1vw)"
+    fxFlex.lt-md="0 1 calc(50% - 1vw)"
     fxFlex.lt-sm="100%"
   >
     <div class="cardclass">
