@@ -1,0 +1,35 @@
+<h1>Start editing to see some magic happen :)</h1>
+<div
+  fxLayout="row wrap"
+  fxLayout.lt-sm="column"
+  fxLayoutGap="32px"
+  fxLayoutAlign="flex-start"
+>
+  <div
+    style="width:50vwl"
+    *ngFor="let _ of [1, 2, 3, 4, 5, 6]"
+    fxFlex="0 1 calc(33.3% - 32px)"
+    fxFlex.lt-md="0 1 2 calc(50% - 32px)"
+    fxFlex.lt-sm="100%"
+  >
+    <div
+      gdAreas="header header | side content | footer footer"
+      gdGap="16px"
+      gdRows="auto auto auto"
+      gdAreas.lt-md="header | side | content | footer"
+      gdRows.lt-md="auto auto auto auto"
+      class="cardclass"
+    >
+      <div class="simpleclass" gdArea="header">
+        <img
+          mat-card-image
+          src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/025.png"
+          style="max-width: 10vw; max-height: 10vh"
+        />
+      </div>
+      <div class="simpleclass" gdArea="side">Side</div>
+      <div class="simpleclass" gdArea="content">Content</div>
+      <div class="simpleclass" gdArea="footer">Footer</div>
+    </div>
+  </div>
+</div>
