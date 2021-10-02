@@ -28,17 +28,31 @@
           gdAreas.lt-md="header | side | content | footer"
           gdRows.lt-md="auto auto auto auto"
         >
-          <div class="simpleclass" gdArea="header">Pikachu</div>
-          <div class="simpleclass" gdArea="side">
+          <div class="simpleclass" gdArea="header">
+            <h1 style="text-align:center">Pikachu</h1>
+          </div>
+          <div
+            class="simpleclass"
+            gdArea="side"
+            style="position: relative;margin:0 auto;"
+          >
             <img
               mat-card-image
               src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/025.png"
-              style="max-width: 10vw; max-height: 10vh"
+              style="max-width: 10vw; max-height: 10vh text-align:center"
             />
           </div>
           <div class="simpleclass" gdArea="content">
-            Height : 6 feet <br />
-            <br />Weight : 80 kg
+            <!-- <div>Name : Pikachu</div> -->
+            <mat-list>
+              <mat-list-item>
+                Height : 6 feet <mat-divider></mat-divider
+              ></mat-list-item>
+              <mat-list-item>
+                Weight : 80 kg <mat-divider></mat-divider>
+              </mat-list-item>
+            </mat-list>
+            <div></div>
           </div>
           <div class="simpleclass" gdArea="footer">
             <mat-expansion-panel>
